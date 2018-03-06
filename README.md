@@ -1,4 +1,8 @@
-# wireless - SDR
+# 
+Wireshark: W14
+Wireshark_W14.py - The script is used to run Tshark in monitoring mode. It extracts the frame information and length and add increases the value of the counter based on the frame type. The code is encapsulated in a for loop as the wifi disconnects after recording around 13k frames.
+
+wireless - SDR
 The file for the SDR assignment has been uploaded.
 rtl_sdr -s 2400000 -f 101500000 -g25 capture.bin -> This command is used to capture the audio and we stop recording in 5 seconds.
 101.5MHz is the frequent of Sky Radio.
