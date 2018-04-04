@@ -1,0 +1,54 @@
+[System]
+Name='mcs1'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=10
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='SNR'
+Range=[5 40]
+NumMFs=10
+MF1='mf1':'zmf',[10.5 10.5]
+MF2='mf2':'trapmf',[10.5 10.5 15.1 15.1]
+MF3='mf3':'trapmf',[15.1 15.1 17.2 17.2]
+MF4='mf4':'trapmf',[17.2 17.2 22.5 22.5]
+MF5='mf5':'trapmf',[22.5 22.5 26 26]
+MF6='mf6':'trapmf',[26 26 30 30]
+MF7='mf7':'trapmf',[30 30 33 33]
+MF8='mf8':'trapmf',[33 33 36 36]
+MF9='mf9':'trapmf',[36 36 38 38]
+MF10='mf10':'smf',[38 38]
+
+[Output1]
+Name='output1'
+Range=[0 10]
+NumMFs=10
+MF1='mcs0':'trimf',[0 0 0]
+MF2='mcs1':'trimf',[1 1 1]
+MF3='mcs2':'trimf',[2 2 2]
+MF4='mcs3':'trimf',[3 3 3]
+MF5='mcs4':'trimf',[4 4 4]
+MF6='mcs5':'trimf',[5 5 5]
+MF7='mcs6':'trimf',[6 6 6]
+MF8='mcs7':'trimf',[7 7 7]
+MF9='mcs8':'trimf',[8 8 8]
+MF10='mcs9':'trimf',[9 9 9]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
+3, 3 (1) : 1
+4, 4 (1) : 1
+5, 5 (1) : 1
+6, 6 (1) : 1
+7, 7 (1) : 1
+8, 8 (1) : 1
+9, 9 (1) : 1
+10, 10 (1) : 1
