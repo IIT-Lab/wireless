@@ -1,4 +1,5 @@
-# 
+# Note: Please rename the RateControlAlgorithm_Algorithm1.fis file to mcs4.fis before running the matlabcode as the file is accessed with that name from the .m file. We are extremely sorry about the mistake.
+
 Rate Control Algorithm:
 We have proposed 2 algorithms, both using a fuzzy controller. To run the below files we need the Fuzzy Logic Designer toolbox to be installed in matlab. It is enough to have the .fis file in the same folder and run the .m file.
 RateControlAlgorithm_Algorithm1.m and RateControlAlgorithm_Algorithm1.fis files use algorithm 1 (using SNR and BER)
