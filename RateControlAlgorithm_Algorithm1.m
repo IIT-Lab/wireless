@@ -224,7 +224,7 @@ for numPkt = 1:numPackets
 %Rate control algorithm - Using fuzzy logic controller
 % The SNR, BER and current MCS values are given as input to the controller
 % to choose a suitable MCS for the current packet. 
-fis=readfis('mcs4'); %read the fuzzy rules
+fis=readfis('RateControlAlgorithm_Algorithm1'); %read the fuzzy rules
 fis = setfis(fis,'input',1,'range',[meanSNR-amplitude meanSNR+amplitude]); %update SNR range during runtime
 mfInfo = getfis(fis,'input',1,'mf',3,'params');
   if y.EstimatedSNR>=mfInfo(2)    %check if SNR of packet falls under high SNR range
